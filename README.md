@@ -95,6 +95,7 @@ def gameloop():
             gameWindow.fill(white)
             gameWindow.blit(gameoverr,(0,0))
             text_screen("Game Over! press enter to continue",red,250,250)
+            text_screen("Score: "+str(score)+"  Hiscore: "+str(hiscore),red,5,5)
 
             for event in pygame.event.get():
                 if event.type==pygame.QUIT:
